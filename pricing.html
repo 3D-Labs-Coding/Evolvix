@@ -1,0 +1,53 @@
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evolvix | Pricing</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0e14;--panel:#121726;--accent:#6cf2c2;--accent2:#6aa9ff;--text:#e7e9ee;--muted:#9aa3b2}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:radial-gradient(1200px 600px at 10% -10%,#16203a,transparent),var(--bg);color:var(--text)}
+header{position:sticky;top:0;background:rgba(11,14,20,.75);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
+.nav{max-width:1200px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+.nav nav a{margin-left:20px;color:var(--muted);text-decoration:none;font-weight:600;position:relative}
+.nav nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:.25s}
+.nav nav a:hover::after{width:100%}
+main{max-width:1200px;margin:auto;padding:100px 24px}
+h1{font-size:clamp(2.5rem,5vw,3.8rem);margin-bottom:16px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,0));border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:34px;box-shadow:0 20px 60px rgba(0,0,0,.4);transition:.25s}
+.card:hover{transform:translateY(-6px);border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.btn{display:inline-block;padding:14px 24px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#02040a;font-weight:800;text-decoration:none;box-shadow:0 12px 40px rgba(108,242,194,.35)}
+.btn:hover{transform:translateY(-2px)}
+footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 24px;color:var(--muted);text-align:center}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+</style></head><body>
+
+<header>
+  <div class="nav">
+    <img src="assets/logo.svg" alt="Evolvix Logo" height="52">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="what-we-do.html">What We Do</a>
+      <a href="community.html">Community</a>
+      <a href="pricing.html">Pricing</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Pricing</h1>
+  <div class="grid">
+    <div class="card"><h3>Free Drops</h3><p>$0 — Community giveaways</p></div>
+    <div class="card"><h3>Standard Boost</h3><p>From $10</p></div>
+    <div class="card"><h3>Full Character</h3><p>Custom pricing</p></div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Evolvix. All rights reserved.</p>
+  <p style="font-size:12px">Not affiliated with any game publishers. Use services at your own discretion.</p>
+</footer>
+
+</body></html>
